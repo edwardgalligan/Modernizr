@@ -229,6 +229,7 @@ window.Modernizr = (function(window,doc){
             'webkit' + uc_prop,
             'Moz' + uc_prop,
             'moz' + uc_prop,
+            'O' + uc_prop,
             'o' + uc_prop,
             'ms' + uc_prop
         ];
