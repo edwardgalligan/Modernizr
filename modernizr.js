@@ -419,13 +419,13 @@ window.Modernizr = (function(window,doc){
     tests[csstransforms] = function() {
         //  set_css_all( 'transform:rotate(3deg)' );
         
-        return !!test_props([ 'transformProperty', 'webkitTransform', 'MozTransform', 'mozTransform', 'oTransform', 'msTransform' ]);
+        return !!test_props([ 'transformProperty', 'webkitTransform', 'MozTransform', 'mozTransform', 'oTransform', 'OTransform', 'msTransform' ]);
     };
     
     tests[csstransforms3d] = function() {
         //  set_css_all( 'perspective:500' );
         
-        var ret = !!test_props([ 'perspectiveProperty', 'webkitPerspective', 'MozPerspective', 'mozPerspective', 'oPerspective', 'msPerspective' ]);
+        var ret = !!test_props([ 'perspectiveProperty', 'webkitPerspective', 'MozPerspective', 'mozPerspective', 'oPerspective', 'OPerspective', 'msPerspective' ]);
         
         // webkit has 3d transforms disabled for chrome and safari, though
         //   it works fine in webkit nightly on (snow) leopard.
